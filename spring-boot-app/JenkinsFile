@@ -55,8 +55,8 @@ pipeline {
                 sh '''
 pwd
 ls -la
+git config --global --add safe.directory "$WORKSPACE"
 git status
-    git config --global --add safe.directory "$WORKSPACE"
 
                     git config user.email "mdmubeen0912@gmail.com"
                     git config user.name "mubeen0912"
